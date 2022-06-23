@@ -2,3 +2,6 @@
 path = example-application
 file = west.yml
 
+[zephyr]
+base = zephyr
+

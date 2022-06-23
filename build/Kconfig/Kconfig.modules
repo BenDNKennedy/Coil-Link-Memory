@@ -1,0 +1,126 @@
+menu "example-application (F:/PROJECT/CoilLink-Memory/example-application)"
+osource "F:/PROJECT/CoilLink-Memory/example-application/Kconfig"
+config ZEPHYR_EXAMPLE_APPLICATION_MODULE
+	bool
+	default y
+endmenu
+menu "hal_gigadevice (F:/PROJECT/CoilLink-Memory/modules/hal/gigadevice)"
+osource "$(ZEPHYR_HAL_GIGADEVICE_KCONFIG)"
+config ZEPHYR_HAL_GIGADEVICE_MODULE
+	bool
+	default y
+endmenu
+menu "hal_infineon (F:/PROJECT/CoilLink-Memory/modules/hal/infineon)"
+osource "$(ZEPHYR_HAL_INFINEON_KCONFIG)"
+config ZEPHYR_HAL_INFINEON_MODULE
+	bool
+	default y
+endmenu
+menu "hal_nordic (F:/PROJECT/CoilLink-Memory/modules/hal/nordic)"
+osource "$(ZEPHYR_HAL_NORDIC_KCONFIG)"
+config ZEPHYR_HAL_NORDIC_MODULE
+	bool
+	default y
+endmenu
+menu "hal_nxp (F:/PROJECT/CoilLink-Memory/modules/hal/nxp)"
+osource "$(ZEPHYR_HAL_NXP_KCONFIG)"
+config ZEPHYR_HAL_NXP_MODULE
+	bool
+	default y
+endmenu
+menu "hal_rpi_pico (F:/PROJECT/CoilLink-Memory/modules/hal/rpi_pico)"
+osource "$(ZEPHYR_HAL_RPI_PICO_KCONFIG)"
+config ZEPHYR_HAL_RPI_PICO_MODULE
+	bool
+	default y
+endmenu
+menu "hal_telink (F:/PROJECT/CoilLink-Memory/modules/hal/telink)"
+osource "F:/PROJECT/CoilLink-Memory/modules/hal/telink/Kconfig"
+config ZEPHYR_HAL_TELINK_MODULE
+	bool
+	default y
+endmenu
+menu "liblc3codec (F:/PROJECT/CoilLink-Memory/modules/lib/liblc3codec)"
+osource "$(ZEPHYR_LIBLC3CODEC_KCONFIG)"
+config ZEPHYR_LIBLC3CODEC_MODULE
+	bool
+	default y
+endmenu
+menu "littlefs (F:/PROJECT/CoilLink-Memory/modules/fs/littlefs)"
+osource "$(ZEPHYR_LITTLEFS_KCONFIG)"
+config ZEPHYR_LITTLEFS_MODULE
+	bool
+	default y
+endmenu
+menu "loramac-node (F:/PROJECT/CoilLink-Memory/modules/lib/loramac-node)"
+osource "$(ZEPHYR_LORAMAC_NODE_KCONFIG)"
+config ZEPHYR_LORAMAC_NODE_MODULE
+	bool
+	default y
+endmenu
+menu "lvgl (F:/PROJECT/CoilLink-Memory/modules/lib/gui/lvgl)"
+osource "F:/PROJECT/CoilLink-Memory/modules/lib/gui/lvgl/zephyr/Kconfig"
+config ZEPHYR_LVGL_MODULE
+	bool
+	default y
+endmenu
+menu "lz4 (F:/PROJECT/CoilLink-Memory/modules/lib/lz4)"
+osource "$(ZEPHYR_LZ4_KCONFIG)"
+config ZEPHYR_LZ4_MODULE
+	bool
+	default y
+endmenu
+menu "mbedtls (F:/PROJECT/CoilLink-Memory/modules/crypto/mbedtls)"
+osource "$(ZEPHYR_MBEDTLS_KCONFIG)"
+config ZEPHYR_MBEDTLS_MODULE
+	bool
+	default y
+endmenu
+menu "nanopb (F:/PROJECT/CoilLink-Memory/modules/lib/nanopb)"
+osource "$(ZEPHYR_NANOPB_KCONFIG)"
+config ZEPHYR_NANOPB_MODULE
+	bool
+	default y
+endmenu
+menu "picolibc (F:/PROJECT/CoilLink-Memory/modules/lib/picolibc)"
+osource "F:/PROJECT/CoilLink-Memory/modules/lib/picolibc/zephyr/Kconfig"
+config ZEPHYR_PICOLIBC_MODULE
+	bool
+	default y
+endmenu
+menu "sof (F:/PROJECT/CoilLink-Memory/modules/audio/sof)"
+osource "F:/PROJECT/CoilLink-Memory/modules/audio/sof/zephyr/Kconfig"
+config ZEPHYR_SOF_MODULE
+	bool
+	default y
+endmenu
+menu "tflite-micro (F:/PROJECT/CoilLink-Memory/modules/lib/tflite-micro)"
+osource "$(ZEPHYR_TFLITE_MICRO_KCONFIG)"
+config ZEPHYR_TFLITE_MICRO_MODULE
+	bool
+	default y
+endmenu
+menu "TraceRecorder (F:/PROJECT/CoilLink-Memory/modules/debug/TraceRecorder)"
+osource "F:/PROJECT/CoilLink-Memory/modules/debug/TraceRecorder/kernelports/Zephyr/Kconfig"
+config ZEPHYR_TRACERECORDER_MODULE
+	bool
+	default y
+endmenu
+menu "trusted-firmware-m (F:/PROJECT/CoilLink-Memory/modules/tee/tf-m/trusted-firmware-m)"
+osource "$(ZEPHYR_TRUSTED_FIRMWARE_M_KCONFIG)"
+config ZEPHYR_TRUSTED_FIRMWARE_M_MODULE
+	bool
+	default y
+endmenu
+menu "zcbor (F:/PROJECT/CoilLink-Memory/modules/lib/zcbor)"
+osource "$(ZEPHYR_ZCBOR_KCONFIG)"
+config ZEPHYR_ZCBOR_MODULE
+	bool
+	default y
+endmenu
+menu "zscilib (F:/PROJECT/CoilLink-Memory/modules/lib/zscilib)"
+osource "F:/PROJECT/CoilLink-Memory/modules/lib/zscilib/Kconfig.zscilib"
+config ZEPHYR_ZSCILIB_MODULE
+	bool
+	default y
+endmenu
