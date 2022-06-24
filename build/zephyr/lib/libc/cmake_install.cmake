@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("F:/PROJECT/CoilLink-Memory/build/zephyr/lib/libc/minimal/cmake_install.cmake")
+  include("F:/PROJECT/CoilLink-Memory/build/zephyr/lib/libc/newlib/cmake_install.cmake")
 endif()
 

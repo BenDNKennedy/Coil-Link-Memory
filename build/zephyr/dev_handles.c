@@ -56,7 +56,7 @@
  *   - /soc/pin-controller@48000000/gpio@48002000
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_soc_S_rcc_40021000[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 7, 11, 8, 13, 3, 4, 5, 12, 9, 14, 6, 10, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_soc_S_rcc_40021000[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 14, 6, 10, 7, 11, 8, 3, 13, 4, 5, 12, 9, DEVICE_HANDLE_ENDS };
 
 /* 2 : /soc/interrupt-controller@40010400:
  * Direct Dependencies:
@@ -120,11 +120,12 @@ __devicehdl_DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000c00[] = { 1, DEVICE
  *   - (/soc/pin-controller@48000000)
  *   - /soc/rcc@40021000
  * Supported:
+ *   - /dht22
  *   - (/gpio_keys/button)
  *   - (/leds/led_1)
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000800[] = { 1, DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000800[] = { 1, DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 15, DEVICE_HANDLE_ENDS };
 
 /* 10 : /soc/pin-controller@48000000/gpio@48000400:
  * Direct Dependencies:
@@ -177,3 +178,11 @@ __devicehdl_DT_N_S_soc_S_serial_40008000[] = { 1, DEVICE_HANDLE_SEP, DEVICE_HAND
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
 __devicehdl_DT_N_S_soc_S_serial_40004400[] = { 1, DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
+
+/* 15 : /dht22:
+ * Direct Dependencies:
+ *   - (/)
+ *   - /soc/pin-controller@48000000/gpio@48000800
+ */
+const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
+__devicehdl_DT_N_S_dht22[] = { 9, DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };

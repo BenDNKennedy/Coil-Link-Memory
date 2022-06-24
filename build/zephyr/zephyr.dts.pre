@@ -3482,4 +3482,21 @@ arduino_serial: &lpuart1 {};
  status = "okay";
 };
 # 1 "<command-line>" 2
+# 1 "F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht/boards/nucleo_l496zg.overlay" 1
+
+
+
+
+
+
+/ {
+ dht22 {
+  compatible = "aosong,dht";
+  status = "okay";
+  label = "DHT22";
+  dio-gpios = <&gpioc 0 ((1 << 4) | (1 << 0))>;
+  dht22;
+ };
+};
+# 1 "<command-line>" 2
 # 1 "F:/PROJECT/CoilLink-Memory/zephyr/misc/empty_file.c"

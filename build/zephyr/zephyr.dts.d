@@ -17,4 +17,5 @@ empty_file.o: F:/PROJECT/CoilLink-Memory/zephyr/misc/empty_file.c \
  F:/PROJECT/CoilLink-Memory/modules/hal/stm32/dts/st/l4/stm32l496z(e-g)tx-pinctrl.dtsi \
  F:/PROJECT/CoilLink-Memory/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl.h \
  F:/PROJECT/CoilLink-Memory/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl-common.h \
- F:/PROJECT/CoilLink-Memory/zephyr/boards/arm/nucleo_l496zg/arduino_r3_connector.dtsi
+ F:/PROJECT/CoilLink-Memory/zephyr/boards/arm/nucleo_l496zg/arduino_r3_connector.dtsi \
+ F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht/boards/nucleo_l496zg.overlay

@@ -1,4 +1,4 @@
-# Install script for directory: F:/PROJECT/CoilLink-Memory/zephyr/lib/libc/minimal
+# Install script for directory: F:/PROJECT/CoilLink-Memory/zephyr/drivers/sensor/dht
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

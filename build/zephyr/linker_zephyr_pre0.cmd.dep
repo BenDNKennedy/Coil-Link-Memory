@@ -13,7 +13,7 @@ linker_zephyr_pre0.cmd: \
  F:/PROJECT/CoilLink-Memory/zephyr/include/zephyr/sys/util_macro.h \
  F:/PROJECT/CoilLink-Memory/zephyr/include/zephyr/sys/util_internal.h \
  F:/PROJECT/CoilLink-Memory/zephyr/include/zephyr/sys/util_loops.h \
- F:/PROJECT/CoilLink-Memory/zephyr/lib/libc/minimal/include/stdbool.h \
+ f:\project\zephyr-sdk-0.14.2\arm-zephyr-eabi\lib\gcc\arm-zephyr-eabi\10.3.0\include\stdbool.h \
  F:/PROJECT/CoilLink-Memory/zephyr/include/zephyr/devicetree/io-channels.h \
  F:/PROJECT/CoilLink-Memory/zephyr/include/zephyr/devicetree/clocks.h \
  F:/PROJECT/CoilLink-Memory/zephyr/include/zephyr/devicetree/gpio.h \

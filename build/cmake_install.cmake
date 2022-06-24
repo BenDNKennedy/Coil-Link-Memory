@@ -1,4 +1,4 @@
-# Install script for directory: F:/PROJECT/CoilLink-Memory/DHT
+# Install script for directory: F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
