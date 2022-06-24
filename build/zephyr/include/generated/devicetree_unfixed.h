@@ -5,7 +5,7 @@
  *   F:/PROJECT/CoilLink-Memory/build/zephyr/zephyr.dts.pre
  *
  * Directories with bindings:
- *   F:/PROJECT/CoilLink-Memory/example-application/dts/bindings, $ZEPHYR_BASE\dts\bindings
+ *   $ZEPHYR_BASE\dts\bindings
  *
  * Node dependency ordering (ordinal and path):
  *   0   /

@@ -150,10 +150,6 @@ F:/PROJECT/CoilLink-Memory/build/zephyr/drivers/timer/CMakeFiles/rebuild_cache.d
 F:/PROJECT/CoilLink-Memory/build/zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir
 F:/PROJECT/CoilLink-Memory/build/zephyr/drivers/pinctrl/CMakeFiles/edit_cache.dir
 F:/PROJECT/CoilLink-Memory/build/zephyr/drivers/pinctrl/CMakeFiles/rebuild_cache.dir
-F:/PROJECT/CoilLink-Memory/build/modules/example-application/CMakeFiles/edit_cache.dir
-F:/PROJECT/CoilLink-Memory/build/modules/example-application/CMakeFiles/rebuild_cache.dir
-F:/PROJECT/CoilLink-Memory/build/modules/example-application/drivers/CMakeFiles/edit_cache.dir
-F:/PROJECT/CoilLink-Memory/build/modules/example-application/drivers/CMakeFiles/rebuild_cache.dir
 F:/PROJECT/CoilLink-Memory/build/modules/canopennode/CMakeFiles/edit_cache.dir
 F:/PROJECT/CoilLink-Memory/build/modules/canopennode/CMakeFiles/rebuild_cache.dir
 F:/PROJECT/CoilLink-Memory/build/modules/chre/CMakeFiles/edit_cache.dir

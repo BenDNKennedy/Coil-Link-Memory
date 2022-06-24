@@ -1,4 +1,5 @@
-"example-application":"F:/PROJECT/CoilLink-Memory/example-application":"F:/PROJECT/CoilLink-Memory/example-application"
+"canopennode":"F:/PROJECT/CoilLink-Memory/modules/lib/canopennode":"${ZEPHYR_CANOPENNODE_CMAKE_DIR}"
+"chre":"F:/PROJECT/CoilLink-Memory/modules/lib/chre":"F:/PROJECT/CoilLink-Memory/modules/lib/chre/platform/zephyr"
 "cmsis":"F:/PROJECT/CoilLink-Memory/modules/hal/cmsis":"F:/PROJECT/CoilLink-Memory/modules/hal/cmsis"
 "fatfs":"F:/PROJECT/CoilLink-Memory/modules/fs/fatfs":"F:/PROJECT/CoilLink-Memory/modules/fs/fatfs"
 "altera":"F:/PROJECT/CoilLink-Memory/modules/hal/altera":"F:/PROJECT/CoilLink-Memory/modules/hal/altera"

@@ -1,10 +1,4 @@
 F:\PROJECT\CoilLink-Memory\build\Kconfig\Kconfig.modules
-F:\PROJECT\CoilLink-Memory\build\Kconfig\Kconfig.shield
-F:\PROJECT\CoilLink-Memory\build\Kconfig\Kconfig.shield.defconfig
-F:\PROJECT\CoilLink-Memory\example-application\Kconfig
-F:\PROJECT\CoilLink-Memory\example-application\drivers\Kconfig
-F:\PROJECT\CoilLink-Memory\example-application\drivers\sensor\Kconfig
-F:\PROJECT\CoilLink-Memory\example-application\drivers\sensor\examplesensor\Kconfig
 F:\PROJECT\CoilLink-Memory\modules\audio\sof\Kconfig.sof
 F:\PROJECT\CoilLink-Memory\modules\audio\sof\Kconfig.xtos-build
 F:\PROJECT\CoilLink-Memory\modules\audio\sof\Kconfig.xtos-dbg

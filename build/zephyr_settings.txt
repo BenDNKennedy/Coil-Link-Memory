@@ -6,8 +6,6 @@
 # and/or the west manifest file.
 #
 # See the Modules guide for more information.
-"BOARD_ROOT":"F:/PROJECT/CoilLink-Memory/example-application"
-"DTS_ROOT":"F:/PROJECT/CoilLink-Memory/example-application"
 "DTS_ROOT":"F:/PROJECT/CoilLink-Memory/modules/hal/atmel"
 "DTS_ROOT":"F:/PROJECT/CoilLink-Memory/modules/hal/espressif"
 "DTS_ROOT":"F:/PROJECT/CoilLink-Memory/modules/hal/gigadevice"
