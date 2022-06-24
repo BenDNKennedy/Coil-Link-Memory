@@ -1,8 +1,4 @@
-/*
- * Copyright (c) 2019 Nordic Semiconductor ASA
- *
- * SPDX-License-Identifier: Apache-2.0
- */
+//DHT11 Test 
 
 #include <zephyr/zephyr.h>
 #include <zephyr/device.h>
@@ -33,15 +29,15 @@ static const char *now_str(void)
 
 void main(void)
 {
-	const struct device *dht22 = DEVICE_DT_GET_ONE(aosong_dht);
+	const struct device *dht11 = DEVICE_DT_GET_ONE(aosong_dht);
 
-	if (!device_is_ready(dht22)) {
-		printf("Device %s is not ready\n", dht22->name);
+	if (!device_is_ready(dht11)) {
+		printf("Device %s is not ready\n", dht11->name);
 		return;
 	}
 
 	while (true) {
-		int rc = sensor_sample_fetch(dht22);
+		int rc = sensor_sample_fetch(dht11);
 
 		if (rc != 0) {
 			printf("Sensor fetch failed: %d\n", rc);
@@ -51,10 +47,10 @@ void main(void)
 		struct sensor_value temperature;
 		struct sensor_value humidity;
 
-		rc = sensor_channel_get(dht22, SENSOR_CHAN_AMBIENT_TEMP,
+		rc = sensor_channel_get(dht11, SENSOR_CHAN_AMBIENT_TEMP,
 					&temperature);
 		if (rc == 0) {
-			rc = sensor_channel_get(dht22, SENSOR_CHAN_HUMIDITY,
+			rc = sensor_channel_get(dht11, SENSOR_CHAN_HUMIDITY,
 						&humidity);
 		}
 		if (rc != 0) {

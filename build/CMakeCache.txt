@@ -18,10 +18,10 @@
 APPLICATION_BINARY_DIR:PATH=F:/PROJECT/CoilLink-Memory/build
 
 //Application Source Directory
-APPLICATION_SOURCE_DIR:PATH=F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht
+APPLICATION_SOURCE_DIR:PATH=F:/PROJECT/CoilLink-Memory/DHT
 
-//No help, variable specified on the command line.
-BOARD:UNINITIALIZED=nucleo_l496zg
+//Selected board
+BOARD:STRING=nucleo_l496zg
 
 //Path to a file.
 BOARD_DIR:PATH=F:/PROJECT/CoilLink-Memory/zephyr/boards/arm/nucleo_l496zg
@@ -39,7 +39,7 @@ CACHED_BOARD:STRING=nucleo_l496zg
 // listed, e.g. CONF_FILE="prj1.conf;prj2.conf" The CACHED_CONF_FILE
 // is internal Zephyr variable used between CMake runs. To change
 // CONF_FILE, use the CONF_FILE variable.
-CACHED_CONF_FILE:STRING=F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht/prj.conf
+CACHED_CONF_FILE:STRING=F:/PROJECT/CoilLink-Memory/DHT/prj.conf
 
 //Selected shield
 CACHED_SHIELD:STRING=
@@ -112,8 +112,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=F:/PROJECT/zephyr-sdk-0.14.2/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe
+//Path to a program.
+CMAKE_C_COMPILER:FILEPATH=F:/PROJECT/zephyr-sdk-0.14.2/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -211,7 +211,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=dht
+CMAKE_PROJECT_NAME:STATIC=my_zephyr_app
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.1.99
@@ -298,7 +298,7 @@ DTC:FILEPATH=C:/ProgramData/chocolatey/bin/dtc.exe
 // parameter. These settings will override the settings in the
 // board's .dts file. Multiple files may be listed, e.g. DTC_OVERLAY_FILE="dts1.overlay
 // dts2.overlay"
-DTC_OVERLAY_FILE:STRING=F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht/boards/nucleo_l496zg.overlay
+DTC_OVERLAY_FILE:STRING=F:/PROJECT/CoilLink-Memory/DHT/boards/nucleo_l496zg.overlay
 
 //Path to a program.
 GPERF:FILEPATH=C:/ProgramData/chocolatey/bin/gperf.exe
@@ -358,7 +358,7 @@ Zephyr-Kernel_BINARY_DIR:STATIC=F:/PROJECT/CoilLink-Memory/build
 Zephyr-Kernel_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Zephyr-Kernel_SOURCE_DIR:STATIC=F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht
+Zephyr-Kernel_SOURCE_DIR:STATIC=F:/PROJECT/CoilLink-Memory/DHT
 
 //The directory containing a CMake configuration file for Zephyr-sdk.
 Zephyr-sdk_DIR:PATH=F:/PROJECT/zephyr-sdk-0.14.2/cmake
@@ -370,13 +370,13 @@ ZephyrBuildConfiguration_DIR:PATH=ZephyrBuildConfiguration_DIR-NOTFOUND
 Zephyr_DIR:PATH=F:/PROJECT/CoilLink-Memory/zephyr/share/zephyr-package/cmake
 
 //Value Computed by CMake
-dht_BINARY_DIR:STATIC=F:/PROJECT/CoilLink-Memory/build
+my_zephyr_app_BINARY_DIR:STATIC=F:/PROJECT/CoilLink-Memory/build
 
 //Value Computed by CMake
-dht_IS_TOP_LEVEL:STATIC=ON
+my_zephyr_app_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-dht_SOURCE_DIR:STATIC=F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht
+my_zephyr_app_SOURCE_DIR:STATIC=F:/PROJECT/CoilLink-Memory/DHT
 
 
 ########################
@@ -384,7 +384,7 @@ dht_SOURCE_DIR:STATIC=F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht
 ########################
 
 //The application configuration folder
-APPLICATION_CONFIG_DIR:INTERNAL=F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht
+APPLICATION_CONFIG_DIR:INTERNAL=F:/PROJECT/CoilLink-Memory/DHT
 //DT bindings root directories
 CACHED_DTS_ROOT_BINDINGS:INTERNAL=F:/PROJECT/CoilLink-Memory/zephyr/dts/bindings
 //ADVANCED property for variable: CMAKE_ADDR2LINE
@@ -438,8 +438,6 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
@@ -482,7 +480,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=F:/PROJECT/CoilLink-Memory/zephyr/samples/sensor/dht
+CMAKE_HOME_DIRECTORY:INTERNAL=F:/PROJECT/CoilLink-Memory/DHT
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
