@@ -1,4 +1,4 @@
-//DHT11 Test 
+//DHT11 Test Ben Kennedy
 
 #include <zephyr/zephyr.h>
 #include <zephyr/device.h>
