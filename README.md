@@ -8,6 +8,7 @@ Set ZEPHYR_BASE system variable to your zephyr repo path - Example: https://i.im
 ***
 
 Builds are contained within each individual workspace. First navigate to your desired workspace:
+ - Note: (COILLINKMEM-MAIN contains drivers for both ADS1X1X & ADS1X4S0X ADCs)
 ```
 cd $DESIRED-WORKSPACE
 ```
