@@ -1,6 +1,6 @@
 # Coil-Link-Memory
 
-Drivers in this repository
+Device Drivers: 
   - ADS1X1X   (Working)
   - ADS1X4S0X (In Progress)
 
