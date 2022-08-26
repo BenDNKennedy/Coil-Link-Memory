@@ -1,0 +1,2 @@
+add_subdirectory_ifdef(CONFIG_SENSOR adc)
+add_subdirectory_ifdef(CONFIG_SENSOR gpio)

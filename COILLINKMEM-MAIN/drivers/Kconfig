@@ -1,0 +1,11 @@
+# drivers configuration options
+
+# Copyright (c) 2020 Rubus Technologies Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+menu "Device Drivers"
+
+rsource "adc/Kconfig"
+rsource "gpio/Kconfig"
+
+endmenu

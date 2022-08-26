@@ -1,0 +1,21 @@
+# ADC configuration options
+
+# Copyright (c) 2021 Rubus Technologies Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+#
+# ADC options
+#
+menuconfig ADC
+	bool "ADC drivers"
+	# All platforms that implement the ADC driver are now required to
+	# provide relevant DTS entries.
+	help
+	  Enable ADC (Analog to Digital Converter) driver configuration.
+
+if ADC
+
+rsource "Kconfig.ads1x1x"
+rsource "Kconfig.ads1x4s0x"
+
+endif # ADC

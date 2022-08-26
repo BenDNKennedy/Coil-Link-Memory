@@ -1,0 +1,30 @@
+# Copyright (c) 2021 Rubus Technologies Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+  Low-Power, Low-Noise, Highly Integrated, 6- and 12-Channel,
+  4-kSPS, 16/24-Bit, Delta-Sigma ADC with PGA and Voltage Reference
+compatible: "ti,ads1x4s0x"
+
+include: [adc-controller.yaml, spi-device.yaml]
+
+bus: ads1x4s0x
+
+properties:
+    drdy-gpios:
+      type: phandle-array
+      required: false
+      description: |
+        The DRDY pin is an output that transitions low to indicate when
+        conversion data are ready for retrieval.
+    reset-gpios:
+      type: phandle-array
+      required: false
+      description: |
+        Reset the ADC by taking the RESET pin low.
+    "#io-channel-cells":
+      const: 2
+
+io-channel-cells:
+    - positive
+    - negative

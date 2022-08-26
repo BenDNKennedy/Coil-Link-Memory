@@ -1,0 +1,24 @@
+# ADS1x4S0x GPIO configuration options
+
+# Copyright (c) 2021 Rubus Technologies Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+menuconfig GPIO_ADS1X4S0X
+	bool "ADS1x4S0x GPIO driver"
+	depends on ADC_ADS1X4S0X_GPIO
+	help
+	  Enable GPIO driver for ADS1x4S0x.
+
+	  The ADS1x4S0x is a multi-channel delta-sigma ADC with PGA and voltage
+	  reference.
+
+	  The GPIO port of the ADS1x4S0x (D0 to D3) is exposed as a
+	  GPIO controller driver with read/write support.
+
+config GPIO_ADS1X4S0X_INIT_PRIORITY
+	int "Driver init priority"
+	default 99
+	depends on GPIO_ADS1X4S0X
+	help
+	  Device driver initialization priority. This driver must be
+	  initialized after the ADS1x4S0x ADC driver.

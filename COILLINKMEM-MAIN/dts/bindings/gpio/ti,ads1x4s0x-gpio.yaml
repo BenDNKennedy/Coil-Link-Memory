@@ -1,0 +1,22 @@
+description: TI ADS1X4S0X GPIO controller binding
+
+compatible: "ti,ads1x4s0x-gpio"
+
+include: [gpio-controller.yaml, base.yaml]
+
+on-bus: ads1x4s0x
+
+properties:
+    label:
+      required: true
+
+    ngpios:
+      required: true
+      const: 4
+
+    "#gpio-cells":
+      const: 2
+
+gpio-cells:
+  - pin
+  - flags

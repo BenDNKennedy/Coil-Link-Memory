@@ -1,0 +1,16 @@
+# GPIO configuration options
+
+# Copyright (c) 2021 Rubus Technologies Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+menuconfig GPIO
+	bool "GPIO Drivers"
+	select HAS_DTS_GPIO
+	help
+	  Include GPIO drivers in system config
+
+if GPIO
+
+rsource "Kconfig.ads1x4s0x"
+
+endif # GPIO

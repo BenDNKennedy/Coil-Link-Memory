@@ -1,0 +1,56 @@
+#include <zephyr/dt-bindings/adc/adc.h>
+
+/ {
+	zephyr,user {
+		/* adjust channel number according to pinmux in board.dts */
+		io-channels = <&my_ads1115 0>; 
+	};
+};
+
+&i2c1 {
+	my_ads1115: ads1115@48{
+		compatible = "ti,ads1115";
+		label = "ADS1115";
+		status = "okay";
+		reg = <0x48>;
+		
+		#io-channel-cells = <1>;
+
+		#address-cells = <1>;
+		#size-cells = <0>;
+	
+		channel@0{
+			reg = <0> ;
+			zephyr,gain = "ADC_GAIN_1";
+			zephyr,reference = "ADC_REF_INTERNAL";
+			zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+			zephyr,resolution = <15>;		
+		
+			zephyr,input-positive = <0>; 
+		};			
+	};
+};
+
+&spi1{
+	pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;
+	cs-gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;         //D10 on NucleoL496ZG
+	status = "okay";
+	
+	my_ads124s06: ads1x4s06@0{
+		compatible = "ti,ads1x4s0x", "ti,ads124s06";
+		reg = <0>;
+		spi-max-frequency = <DT_FREQ_M(10)>;
+		label = "ADS124S06"; 
+		drdy-gpios = <&gpiod 15 GPIO_ACTIVE_HIGH>;  //D9 on NucleoL496ZG
+		reset-gpios = <&gpiof 12 GPIO_ACTIVE_LOW>;  //D8 on NucleoL496ZG
+		#io-channel-cells = <2>;
+		
+		my_ads124s06_gpio: gpio {
+			compatible = "ti,ads1x4s0x-gpio";
+			gpio-controller;
+			ngpios = <4>;
+			label = "ADS124S06_GPIO";
+			#gpio-cells = <2>;
+		};
+	};
+};
