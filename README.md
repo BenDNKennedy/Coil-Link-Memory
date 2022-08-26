@@ -1,8 +1,9 @@
 # Coil-Link-Memory
 
 Device Drivers: 
-  - ADS1X1X   (Working)
   - ADS1X4S0X (In Progress)
+  - ADS1X1X   (Working)
+  - DHTXX     (Working)
 
 ***
 Set ZEPHYR_BASE system variable to your zephyr repo path - Example: https://i.imgur.com/3gSTP4d.png
