@@ -26,6 +26,17 @@ LOG_MODULE_REGISTER(ADS1X4S0X, CONFIG_SENSOR_LOG_LEVEL);
 
 #include "adc_ads1x4s0x.h"
 
+
+
+
+static int ads1x4s0x_read_reg(const struct device *dev, 
+							  uint8_t addr,
+			      			  uint8_t *val
+							  ){
+	return ads1x4s0x_read_reg_multiple(dev, addr, val, sizeof(*val));
+}
+
+
 static int ads1x4s0x_init(const struct device *dev)
 {
 	//Creates pointer to ads1x4s0x_config struct. Sets pointer (*config) to config member from dev struct.
