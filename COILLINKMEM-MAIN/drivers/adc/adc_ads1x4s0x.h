@@ -226,8 +226,7 @@ struct ads1x4s0x_data {
 	struct k_sem acq_sem;
 	struct k_sem drdy_gpio_sem;
 
-	K_KERNEL_STACK_MEMBER(stack,
-			CONFIG_ADC_ADS1X4S0X_ACQUISITION_THREAD_STACK_SIZE);
+	K_KERNEL_STACK_MEMBER(stack, CONFIG_ADC_ADS1X4S0X_ACQUISITION_THREAD_STACK_SIZE);
 };
 
 #endif /* ZEPHYR_DRIVERS_ADC_ADS1X4S0X_H_ */

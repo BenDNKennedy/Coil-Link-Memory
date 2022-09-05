@@ -1,1 +1,1 @@
-add_subdirectory_ifdef(CONFIG_ADC ads1115)
+add_subdirectory_ifdef(CONFIG_ADC_ADS1X1X ads1115)

@@ -32,8 +32,8 @@
 };
 
 &spi1{
-	pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;
-	cs-gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;         //D10 on NucleoL496ZG
+	pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;	//
+	cs-gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;         			//D10 on NucleoL496ZG
 	status = "okay";
 	
 	my_ads124s06: ads1x4s06@0{
@@ -41,9 +41,9 @@
 		reg = <0>;
 		spi-max-frequency = <DT_FREQ_M(10)>;
 		label = "ADS124S06"; 
-		drdy-gpios = <&gpiod 15 GPIO_ACTIVE_HIGH>;  //D9 on NucleoL496ZG
-		reset-gpios = <&gpiof 12 GPIO_ACTIVE_LOW>;  //D8 on NucleoL496ZG
-		#io-channel-cells = <2>;
+		drdy-gpios = <&gpiod 15 GPIO_ACTIVE_HIGH>;  			//D9 on NucleoL496ZG
+		reset-gpios = <&gpiof 12 GPIO_ACTIVE_LOW>;  			//D8 on NucleoL496ZG
+		#io-channel-cells = <2>;	
 		
 		my_ads124s06_gpio: gpio {
 			compatible = "ti,ads1x4s0x-gpio";
